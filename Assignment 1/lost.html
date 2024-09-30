@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,100;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/loggo.png">
+    <title>LOST 'N FOUND</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="images/loggo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="lost.html">LOST</a></li>
+                <li><a href="found.html">FOUND</a></li>
+                <li><a href="contact.html">CONTACTS</a></li>
+                <li><a href="profile.html">PROFILE</a></li>  
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <section id="lost-form-section">
+        <div id="lost-form-container">
+            <form id="lost-item-form">
+                <h2>Lost Item Form</h2>
+                <div class="form-group">
+                    <label for="lost-item-name-input">Item Name:</label>
+                    <input type="text" id="lost-item-name-input" name="lostItemName" placeholder="Enter item name">
+                </div>
+                <div class="form-group">
+                    <label for="lost-item-email-input">Item Email:</label>
+                    <input type="email" id="lost-item-email-input" name="lostItemEmail" placeholder="Enter email address">
+                </div>
+                <div class="form-group">
+                    <label for="lost-item-notes-input">Item Notes:</label>
+                    <textarea id="lost-item-notes-input" name="lostItemNotes" placeholder="Enter any additional notes"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="lost-item-found-input" name="lostItemFound">
+                    <label for="lost-item-found-input">Item Found:</label>
+                </div>
+                <div class="form-group">
+                    <label for="lost-item-status-lost">Lost</label>
+                    <input type="radio" id="lost-item-status-lost" name="lostItemStatus" value="lost">
+                    <label for="lost-item-status-found">Found</label>
+                    <input type="radio" id="lost-item-status-found" name="lostItemStatus" value="found">
+                </div>
+                <div class="form-group">
+                    <label for="lost-item-rating-input">Item Rating:</label>
+                    <input type="range" id="lost-item-rating-input" name="lostItemRating" min="1" max="5">
+                </div>
+                <div class="form-group">
+                    <label for="lost-item-password-input">Item Password:</label>
+                    <input type="password" id="lost-item-password-input" name="lostItemPassword" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <label for="lost-item-url-input">Item URL:</label>
+                    <input type="url" id="lost-item-url-input" name="lostItemUrl" placeholder="Enter URL">
+                </div>
+                <div class="form-group">
+                    <label for="lost-item-search-input">Item Search:</label>
+                    <input type="search" id="lost-item-search-input" name="lostItemSearch" placeholder="Enter search term">
+                </div>
+                <div class="form-group">
+                    <label for="lost-item-hidden-input">Item Hidden:</label>
+                    <input type="hidden" id="lost-item-hidden-input" name="lostItemHidden" value="hidden value">
+                </div>
+                <div class="form-group">
+                    <button type="reset" id="lost-item-reset-btn">Reset</button>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="lost-item-submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
